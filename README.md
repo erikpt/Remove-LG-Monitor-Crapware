@@ -58,8 +58,6 @@ A lightweight status-and-action window:
   <em>Removal log after a successful run, status back to NOT INSTALLED</em>
 </p>
 
-> **Note:** Add your own screenshots to a `docs/` folder in the repo (e.g. `docs/screenshot-installed.png`, `docs/screenshot-complete.png`) and the images above will render automatically on GitHub. Placeholders are used here since screenshots can't be generated from the script text alone.
-
 ### Running the GUI version
 
 1. Download `Remove-LGMonitorApp-GUI.ps1`.
