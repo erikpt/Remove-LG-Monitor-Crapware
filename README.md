@@ -2,6 +2,16 @@
 
 A pair of PowerShell scripts for completely uninstalling **LG Monitor App** (any version) from a Windows machine — including the provisioned package, all per-user installed instances, and leftover files in `WindowsApps` that a normal uninstall often leaves behind.
 
+> **Why this matters right now:** This tool was put together in response to Gamers Nexus's recent investigation, [*"DO NOT BUY: LG's Spyware TVs, Monitors, and Wiretapping Concerns"*](https://www.youtube.com/watch?v=Q9uefFYe6bM), which found that the LG Monitor App Installer gets silently pushed to PCs through Windows Update as soon as an LG monitor is plugged in — no prompt, no consent — and then serves McAfee "free trial" pop-ups on nearly every boot. The issue was originally documented by Reddit user u/Mags_Smash in [this r/pcmasterrace thread](https://old.reddit.com/r/pcmasterrace/comments/1uk7v0v/windows_update_silently_installed_lg_bloatware/), who traced the install back to Windows' device-metadata pipeline using Reliability Monitor and Event Viewer, before Gamers Nexus picked it up and reproduced it independently.
+>
+> Further reading / how the story developed:
+> - [Windows Update silently installed LG bloatware, which causes a McAfee pop up](https://old.reddit.com/r/pcmasterrace/comments/1uk7v0v/windows_update_silently_installed_lg_bloatware/) — the original r/pcmasterrace report
+> - [LG TVs and monitors said to surveil users and...](https://old.reddit.com/r/pcmasterrace/comments/1uyxivn/lg_tvs_and_monitors_said_to_surveil_users_and/) — follow-up on the broader privacy/surveillance concerns
+> - [The LG adware situation](https://old.reddit.com/r/microsoftsucks/comments/1v5u4w5/the_lg_adware_situation/) — r/microsoftsucks discussion on Microsoft enabling the silent install
+> - [LG to remove unwanted monitor pop-ups following...](https://old.reddit.com/r/pcgaming/comments/1v4zw9a/lg_to_remove_unwanted_monitor_popups_following/) — r/pcgaming thread on LG/Microsoft's response
+>
+> Microsoft has since said LG agreed to drop the McAfee pop-up specifically, but the app itself still installs silently and isn't removed by that fix — hence this script.
+
 There are two ways to run the removal:
 
 | Script | Description |
